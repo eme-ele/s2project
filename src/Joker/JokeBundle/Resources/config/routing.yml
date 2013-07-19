@@ -1,0 +1,18 @@
+JokerJokeBundle_home:
+    pattern: /
+    defaults: {_controller:JokerJokeBundle:Home:index}
+    requirements:
+        _method: GET
+
+JokerJokeBundle_post:
+    resource: "@JokerJokeBundle/Controller/"
+    type: annotation
+    prefix: /
+
+JokerJokeBundle_comment_create:
+    pattern: comment/{post_id}
+    defaults: {_controller:JokerJokeBundle:Comment:create}
+    requirements:
+        _method: POST
+        post_id: \d+
+

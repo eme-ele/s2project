@@ -1,0 +1,7 @@
+parameters:
+#    joker_joke.example.class: Joker\JokeBundle\Example
+
+services:
+#    joker_joke.example:
+#        class: %joker_joke.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
