@@ -19,7 +19,8 @@ Para ejecutar el Framework
 	Verificar que la linea `Include conf/extra/httpd-vhosts.conf` esta descomentada en el archivo httpd.conf en el directorio `apache/conf`
 		
  * Agregar el virtual host en el archivo `httpd-vhosts.conf` en la carpeta de `apache/conf/extra/`
-		  
+	
+	<code>
 	NameVirtualHost *:80
 
 	<VirtualHost *:80>
@@ -34,18 +35,17 @@ Para ejecutar el Framework
 		ErrorLog "logs/project-error_log"
 		CustomLog "logs/project-access_log" common
 	</VirtualHost>
+	</codecode>
 
  * Iniciar el servidor:
  
- 	apachectl -k start
+	sudo apachectl -k start
 
  * Confirmar que el servidor arranco: 
 
 	http://localhost
 
- * Entrar a la aplicacion: 
-
-	http://nombre.virtual.host/app_dev.php
+ * Entrar a la aplicacion `http://nombre.virtual.host/app_dev.php`
 
 		
 ### Built-in server (PHP 5.4)
@@ -54,6 +54,4 @@ Para ejecutar el Framework
  	
 	php app/console server:run 
 
- * Entrar a la aplicacion: 
- 
- 	http://localhost/s2project/web/app_dev.php/
+ * Entrar a la aplicacion `http://localhost/s2project/web/app_dev.php/`
