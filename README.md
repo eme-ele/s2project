@@ -20,7 +20,7 @@ Para ejecutar el Framework
 		
  * Agregar el virtual host en el archivo `httpd-vhosts.conf` en la carpeta de `apache/conf/extra/`
 	
-	<code>
+	```html
 	NameVirtualHost *:80
 
 	<VirtualHost *:80>
@@ -35,17 +35,15 @@ Para ejecutar el Framework
 		ErrorLog "logs/project-error_log"
 		CustomLog "logs/project-access_log" common
 	</VirtualHost>
-	</codecode>
+	```
 
  * Iniciar el servidor:
  
 	sudo apachectl -k start
 
- * Confirmar que el servidor arranco: 
+ * Confirmar que el servidor arranco en `http://localhost`
 
-	http://localhost
-
- * Entrar a la aplicacion `http://nombre.virtual.host/app_dev.php`
+ * Entrar a la aplicacion en `http://nombre.virtual.host/app_dev.php`
 
 		
 ### Built-in server (PHP 5.4)
