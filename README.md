@@ -9,7 +9,16 @@ Para ejecutar el Framework
 
 	chmod -R 777 s2project/app/logs
 
-2) Iniciar el servidor
+2) Instalar vendors
+-------------------
+
+Descargar el installer de Composer en caso de no tenerlo y ejecutar el comando install, en el directorio raiz del proyecto
+
+	curl -s http://getcomposer.org/installer | php
+
+	php composer.phar install
+
+3) Iniciar el servidor
 ----------------------
 
 ### Apache
