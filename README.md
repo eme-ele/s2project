@@ -24,9 +24,9 @@ Para ejecutar el Framework
 	NameVirtualHost *:80
 
 	<VirtualHost *:80>
-		DocumentRoot "<path-to-s2project>/web"
+		DocumentRoot <path-to-s2project/web>
 		ServerName nombre.virtual.host
-		<Directory  "<path-to-s2project>/web"				
+		<Directory  <path-to-s2project/web>				
 			Options Indexes FollowSymlinks
 			AllowOverride All
 			Order allow,deny
@@ -39,7 +39,7 @@ Para ejecutar el Framework
 
  * Iniciar el servidor:
  
-	sudo apachectl -k start
+	```sudo apachectl -k start```
 
  * Confirmar que el servidor arranco en `http://localhost`
 
@@ -50,6 +50,6 @@ Para ejecutar el Framework
 
  * Iniciar el servidor
  	
-	php app/console server:run 
+	```php app/console server:run```
 
  * Entrar a la aplicacion `http://localhost/s2project/web/app_dev.php/`
